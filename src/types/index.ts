@@ -2,7 +2,7 @@ export interface BasicProps {
   className?: string;
 }
 
-export type navLinkType = { to: string; label: string; secondRoute?: string; comingSoon?: boolean };
+export type navLinkType = { to: string; label: string; secondRoute?: string };
 
 export interface SocialLinksType {
   facebook?: string;

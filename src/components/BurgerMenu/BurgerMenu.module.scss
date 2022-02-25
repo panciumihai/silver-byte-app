@@ -1,0 +1,79 @@
+@import '../../styles/variables.scss';
+@import '../../styles/breakpoints.scss';
+
+.burgerButton {
+  height: 30px;
+  width: 30px;
+  margin: 10px 0;
+  color: white;
+
+  @include media('>=lgTablet') {
+    display: none;
+  }
+
+  svg {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -80;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  transition: opacity 0.4s;
+  &.visible {
+    z-index: 80;
+    opacity: 100%;
+  }
+}
+
+.menuContainer {
+  position: fixed;
+  width: 400px;
+  height: 100vh;
+  background-color: white;
+  z-index: 91;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  padding-right: 25px;
+  padding-left: 25px;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+
+  &.visible {
+    transform: translateX(0);
+  }
+
+  .header {
+    width: 100%;
+    padding: 20px 0 0 20px;
+
+    .closeContainer {
+      margin-left: auto;
+      width: 30px;
+      height: 30px;
+      color: black;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@keyframes backdropAnimation {
+  0% {
+    z-index: 90;
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
