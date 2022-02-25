@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+
+.button {
+  position: relative;
+  display: inline-block;
+
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+
+  &.medium {
+    padding: 15px 30px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    font-weight: 500;
+  }
+
+  &.small {
+    padding: 0 25px;
+    height: 46px;
+    line-height: 42px;
+    font-size: 14px;
+  }
+
+  &.outline {
+    color: #c6c9d8;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #b1b4c1;
+    border-radius: 6px;
+    &:hover {
+      border: 2px solid $primaryColor;
+      background: $primaryColor;
+      color: #fff;
+
+      box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+  }
+}

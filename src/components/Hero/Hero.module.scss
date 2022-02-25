@@ -1,0 +1,111 @@
+@import '../../styles/breakpoints.scss';
+
+.wrapper {
+  height: 80vh;
+  width: 100%;
+
+  position: relative;
+  background-image: url('../../assets/images/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  .particlesAnimation {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      background-color: #00010c;
+      opacity: 0.6;
+    }
+
+    h1 {
+      margin-top: 50px;
+      margin-bottom: 15px;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      text-align: center;
+      color: #fff;
+      font-size: 90px;
+      font-weight: 900;
+      line-height: 112px;
+      text-transform: uppercase;
+      font-family: 'Montserrat';
+      background-image: linear-gradient(145deg, #f81f01, #ee076e);
+
+      @include media('<laptop') {
+        font-size: 70px;
+        line-height: 82px;
+      }
+
+      @include media('<lgTablet') {
+        font-size: 56px;
+        line-height: 60px;
+      }
+
+      @include media('<smTablet') {
+        font-size: 36px;
+        line-height: 46px;
+      }
+    }
+
+    p {
+      padding: 0 16%;
+      color: #c6c9d8;
+      font-size: 24px;
+      line-height: 40px;
+      font-weight: 300;
+      text-align: center;
+
+      @include media('<laptop') {
+        font-size: 22px;
+        line-height: 34px;
+      }
+
+      @include media('<lgTablet') {
+        font-size: 20px;
+        line-height: 32px;
+      }
+
+      @include media('<smTablet') {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+
+    button {
+      margin-top: 50px;
+    }
+  }
+}
