@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+
+.navLink {
+  position: relative;
+  padding: 20px 0px;
+  font-size: 1rem;
+  font-weight: 500;
+
+  color: $textColor;
+
+  &::after {
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: $primaryColor;
+    bottom: 0;
+    transition: width 0.3s;
+  }
+
+  &:hover {
+    color: $primaryColor;
+  }
+
+  &.active {
+    color: $primaryColor;
+    &::after {
+      width: 100%;
+    }
+  }
+}

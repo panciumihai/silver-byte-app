@@ -1,9 +1,9 @@
 import classNames from 'classnames';
 import { FC } from 'react';
-import { BasicPros } from '../../types';
+import { BasicProps } from '../../types';
 import styles from './Wrapper.module.scss';
 
-interface WrapperProps extends BasicPros {
+interface WrapperProps extends BasicProps {
   id?: string;
   component?: string | React.ReactNode;
 }
