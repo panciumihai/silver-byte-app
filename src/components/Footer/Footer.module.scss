@@ -1,0 +1,32 @@
+@import '../../styles/variables.scss';
+@import '../../styles/breakpoints.scss';
+
+.wrapper {
+  width: 100%;
+  height: auto;
+  padding: 20px 30px;
+
+  background: rgb(28, 29, 35);
+  background: linear-gradient(180deg, rgba(28, 29, 35, 1) 0%, rgba(30, 31, 37, 1) 100%);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media('<smTablet') {
+    flex-direction: column;
+  }
+
+  .logoContainer {
+    height: 60px;
+    img {
+      height: 100%;
+    }
+  }
+
+  .label {
+    font-size: 14px;
+    color: $textColor;
+    opacity: 0.75;
+  }
+}
