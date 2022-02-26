@@ -6,14 +6,12 @@ import styles from './Hero.module.scss';
 const ParticlesAnimation: FC = () => {
   return (
     <Particles
-      id="particlesAnimation"
+      id="tsparticles"
       className={styles.particlesAnimation}
-      canvasClassName={styles.canvas}
-      style={{
-        position: 'absolute',
-        height: '100%',
-      }}
       options={{
+        fullScreen: {
+          enable: false,
+        },
         fpsLimit: 60,
         interactivity: {
           events: {
