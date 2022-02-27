@@ -1,7 +1,7 @@
 @import '../../styles/breakpoints.scss';
 
 .wrapper {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
 
   position: relative;
@@ -17,6 +17,14 @@
   align-items: center;
 
   color: white;
+
+  @include media('<lgTablet') {
+    height: 80vh;
+  }
+
+  @include media('<smTablet') {
+    height: 70vh;
+  }
 
   .particlesAnimation {
     position: absolute;
