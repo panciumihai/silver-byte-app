@@ -10,8 +10,8 @@ const ServicesSection: FC<ServicesSectionProps> = (props) => {
   const {} = props;
 
   const getServicesCards = () =>
-    SERVICES_CARDS_MOCK.map((sc) => (
-      <Card className={styles.card}>
+    SERVICES_CARDS_MOCK.map((sc, index) => (
+      <Card key={index} className={styles.card}>
         <div className={styles.iconContainer}>{sc.icon}</div>
         <h3>{sc.title}</h3>
         <p>{sc.description}</p>
