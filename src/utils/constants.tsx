@@ -20,22 +20,22 @@ export const NAV_LINKS: navLinkType[] = [
 
 export const SERVICES_CARDS_MOCK = [
   {
-    icon: <FiLayout stroke-width="1" />,
+    icon: <FiLayout strokeWidth="1" />,
     title: 'FrontEnd development',
     description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.',
   },
   {
-    icon: <FiSmartphone stroke-width="1" />,
+    icon: <FiSmartphone strokeWidth="1" />,
     title: 'Responsive layout',
     description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.',
   },
   {
-    icon: <FiSearch stroke-width="1" />,
+    icon: <FiSearch strokeWidth="1" />,
     title: 'Great SEO score',
     description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.',
   },
   {
-    icon: <FiCpu stroke-width="1" />,
+    icon: <FiCpu strokeWidth="1" />,
     title: 'Performance',
     description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.',
   },
