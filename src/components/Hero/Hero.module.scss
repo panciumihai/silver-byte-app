@@ -18,13 +18,13 @@
 
   color: white;
 
-  @include media('<lgTablet') {
-    height: 80vh;
-  }
+  // @include media('<lgTablet') {
+  //   height: 80vh;
+  // }
 
-  @include media('<smTablet') {
-    height: 70vh;
-  }
+  // @include media('<smTablet') {
+  //   height: 70vh;
+  // }
 
   .particlesAnimation {
     position: absolute;

@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.panelContainer {
+  color: $textColor;
+  min-height: 230px;
+  label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 5px 0;
+  }
+}

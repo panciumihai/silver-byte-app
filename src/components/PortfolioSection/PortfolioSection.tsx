@@ -2,7 +2,6 @@ import { FC } from 'react';
 import Slider from 'react-slick';
 import { BasicProps } from '../../types';
 import Button from '../Button/Button';
-import Wrapper from '../Wrapper/Wrapper';
 
 import AlphaCapImage from '../../assets/images/portfolio/alpha-cap.png';
 import AlphaPadImage from '../../assets/images/portfolio/alpha-pad.png';
