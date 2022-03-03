@@ -13,3 +13,13 @@ export interface SocialLinksType {
   medium?: string;
   dextools?: string;
 }
+
+export interface AboutMeType {
+  image: string;
+  name: string;
+  description: string;
+  tabs: {
+    label: string;
+    content: JSX.Element;
+  }[];
+}

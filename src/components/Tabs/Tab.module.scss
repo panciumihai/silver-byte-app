@@ -1,0 +1,41 @@
+@import '../../styles/variables.scss';
+
+.tab {
+  position: relative;
+  margin-right: 20px;
+  padding-bottom: 5px;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 500;
+  color: $textColor;
+  cursor: pointer;
+  transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+
+  &::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    height: 1.5px;
+    bottom: 0;
+  }
+
+  &:hover {
+    &::before {
+      width: 100%;
+      background: $primaryColor;
+      height: 1.5px;
+    }
+  }
+
+  &.active {
+    color: $primaryColorHover;
+    &::before {
+      width: 100%;
+      background: $primaryColor;
+      height: 1.5px;
+    }
+  }
+}
