@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import AboutMe from '../../components/AboutMe/AboutMe';
+import ContactUsSection from '../../components/ContactUsSection/ContactUsSection';
 import Footer from '../../components/Footer/Footer';
 import Header from '../../components/Header/Header';
 import Hero from '../../components/Hero/Hero';
@@ -69,6 +70,7 @@ const Home: FC<HomeProps> = (props) => {
       <TechnologiesSection />
       <PortfolioSection />
       <AboutMe profile={ABOUT_MIHAI_MOCK} />
+      <ContactUsSection />
       <Footer />
     </>
   );

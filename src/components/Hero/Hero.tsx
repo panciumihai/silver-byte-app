@@ -17,7 +17,7 @@ const Hero: FC<HeroProps> = (props) => {
       <div className={styles.container}>
         <h1>WEB DEVELOPMENT</h1>
         <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.</p>
-        <Button className={styles.button} variant="outline" onClick={() => null}>
+        <Button className={styles.button} fullWidth={false} variant="outline" onClick={() => null}>
           CONTACT US
         </Button>
       </div>

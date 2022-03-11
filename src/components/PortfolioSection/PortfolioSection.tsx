@@ -54,11 +54,11 @@ const PortfolioSection: FC<PortfolioSectionProps> = (props) => {
     list.map((l, index) => (
       <div key={index} className={styles.card}>
         <div className={styles.imageContainer}>
-          <img src={l.image} alt={`${l.title} image`}></img>
+          <img src={l.image} alt={`${l.title}`}></img>
         </div>
         <div className={styles.body}>
           <h2>{l.title}</h2>
-          <Button size="small" variant="outline" onClick={() => null}>
+          <Button size="small" variant="outline" fullWidth={false} onClick={() => null}>
             Visit the website
           </Button>
         </div>
