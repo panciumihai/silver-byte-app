@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 0 20px;
+  border: 2px solid rgba(225, 220, 220, 0.1);
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: 50px;
+  line-height: 46px;
+  margin-bottom: 20px;
+  outline: none;
+  color: #fff;
+  font-family: 'Poppins';
+  font-size: 15px;
+  letter-spacing: 0.1px;
+  background-color: #191919;
+  &:hover,
+  &:focus {
+    border-color: $primaryColor;
+  }
+
+  &.textarea {
+    resize: vertical;
+    height: 125px;
+  }
+}

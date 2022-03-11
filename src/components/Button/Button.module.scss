@@ -7,6 +7,13 @@
   -webkit-transition: 0.3s;
   transition: 0.3s;
 
+  text-transform: uppercase;
+  border-radius: 6px;
+
+  &.fullWidth {
+    width: 100%;
+  }
+
   &.medium {
     padding: 15px 30px;
     font-size: 16px;
@@ -21,12 +28,23 @@
     font-size: 14px;
   }
 
+  &.default {
+    color: white;
+    background-color: $primaryColor;
+    border: 2px solid #f9004d;
+    &:hover {
+      background: transparent;
+      color: #f9004d;
+      box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+  }
+
   &.outline {
     color: #c6c9d8;
-    text-transform: uppercase;
     background: transparent;
     border: 2px solid #b1b4c1;
-    border-radius: 6px;
     &:hover {
       border: 2px solid $primaryColorHover;
       background: $primaryColorHover;
