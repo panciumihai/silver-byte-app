@@ -12,6 +12,7 @@ import { AboutMeType, BasicProps } from '../../types';
 
 import MihaiImage from '../../assets/images/team/mihai.jpeg';
 import TabPanel from '../../components/Tabs/TabPanel';
+import TestimonialsSection from '../../components/TestimonialsSection/TestimonialsSection';
 
 const ABOUT_MIHAI_MOCK: AboutMeType = {
   image: MihaiImage,
@@ -69,6 +70,7 @@ const Home: FC<HomeProps> = (props) => {
       <ServicesSection />
       <TechnologiesSection />
       <PortfolioSection />
+      <TestimonialsSection />
       <AboutMe profile={ABOUT_MIHAI_MOCK} />
       <ContactUsSection />
       <Footer />
