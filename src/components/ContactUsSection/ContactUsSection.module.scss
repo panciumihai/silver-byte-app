@@ -2,7 +2,7 @@
 @import '../../styles/variables.scss';
 
 .wrapper {
-  margin-top: 30px;
+  padding-top: 50px;
   margin-bottom: 30px;
   flex-wrap: wrap;
   display: flex;
@@ -24,6 +24,7 @@
 
       @include media('<smTablet') {
         font-size: 36px;
+        text-align: center;
       }
     }
 

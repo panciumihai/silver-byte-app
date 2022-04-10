@@ -1,8 +1,11 @@
+@import '../../styles/breakpoints.scss';
+
 .container {
   width: 100%;
   padding: 20px 40px;
+  padding-bottom: 0;
 
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -10,12 +13,30 @@
 
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 5;
-  background: rgb(0, 1, 12);
+  // background: rgb(0, 1, 12);
   background: linear-gradient(180deg, rgba(0, 1, 12, 1) 0%, rgba(0, 212, 255, 0) 100%);
+  transition: all 0.3s;
+
+  @include media('<mobile') {
+    padding: 10px 20px;
+  }
+
+  &.scrolled {
+    background-color: #101010;
+  }
 
   .logoContainer {
     height: 60px;
+
+    @include media('<smTablet') {
+      height: 50px;
+    }
+    @include media('<mobile') {
+      height: 40px;
+    }
+
     img {
       height: 100%;
     }

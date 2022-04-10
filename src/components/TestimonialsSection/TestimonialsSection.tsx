@@ -6,6 +6,7 @@ import MihaiImage from '../../assets/images/team/mihai.jpeg';
 import styles from './TestimonialsSection.module.scss';
 import classNames from 'classnames';
 import ClientTestimonialCard from './ClientTestimonialCard';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const TESTIMONIALS_MOCK = [
   {
@@ -37,10 +38,12 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = (props) => {
   const [selectedTestimonial, setSelectedTestimonial] = useState(0);
 
   return (
-    <Wrapper className={styles.wrapper}>
-      <div className={styles.testimonialContainer}>
-        <h2>{TESTIMONIALS_MOCK[selectedTestimonial].message}</h2>
-      </div>
+    <Wrapper className={styles.wrapper} component="section" id="#testimonials">
+      <AnimationOnScroll animateOnce animateIn="animate__fadeInDown">
+        <div className={styles.testimonialContainer}>
+          <h2>{TESTIMONIALS_MOCK[selectedTestimonial].message}</h2>
+        </div>
+      </AnimationOnScroll>
       <p>
         <span>{TESTIMONIALS_MOCK[selectedTestimonial].name}</span> - {TESTIMONIALS_MOCK[selectedTestimonial].details}
       </p>

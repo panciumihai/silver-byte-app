@@ -63,6 +63,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      @include media('<smTablet') {
+        padding: 15px;
+      }
+
       .iconContainer {
         margin-bottom: 16px;
         padding: 12px;

@@ -3,10 +3,15 @@
 .navLink {
   position: relative;
   padding: 20px 0px;
+  padding-top: 10px;
+  height: 50px;
+  padding-bottom: 10px;
   font-size: 1rem;
   font-weight: 500;
 
   color: $textColor;
+
+  cursor: pointer;
 
   &::after {
     position: absolute;

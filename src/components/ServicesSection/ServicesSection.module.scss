@@ -64,6 +64,14 @@
     }
 
     .card {
+      @include media('<smTablet') {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 12px;
+      }
+
       .iconContainer {
         width: 54px;
         height: 54px;
@@ -86,6 +94,9 @@
         font-size: 16px;
         line-height: 28px;
         color: $textColor;
+        @include media('<smTablet') {
+          text-align: center;
+        }
       }
 
       &:hover {

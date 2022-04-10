@@ -29,12 +29,12 @@
   }
 
   &.default {
-    color: white;
-    background-color: $primaryColor;
+    background: transparent;
+    color: #f9004d;
     border: 2px solid #f9004d;
     &:hover {
-      background: transparent;
-      color: #f9004d;
+      color: white;
+      background-color: $primaryColor;
       box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
       -webkit-transform: translateY(-5px);
       transform: translateY(-5px);

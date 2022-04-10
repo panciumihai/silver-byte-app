@@ -6,15 +6,16 @@ import Wrapper from '../Wrapper/Wrapper';
 import styles from './Section.module.scss';
 
 interface SectionProps extends BasicProps {
+  id?: string;
   title: string;
   description: string;
   contentClassName: string;
 }
 
 const Section: FC<SectionProps> = (props) => {
-  const { className, contentClassName, children, title, description } = props;
+  const { className, contentClassName, children, id, title, description } = props;
   return (
-    <Wrapper className={classNames(styles.wrapper, className)} component="section">
+    <Wrapper className={classNames(styles.wrapper, className)} component="section" id={id}>
       <div className={styles.header}>
         <h1>{title}</h1>
         <p>{description}</p>

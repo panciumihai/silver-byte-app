@@ -24,6 +24,38 @@
     }
   }
 
+  .socialContainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    .socialButton {
+      margin: 0 6px;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      font-size: 16px;
+
+      border: 2px solid rgba(198, 201, 216, 0.75);
+      border-radius: 50%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      transition: all 0.3s;
+
+      svg {
+        width: 50%;
+        height: 50%;
+      }
+
+      &:hover {
+        transform: translateY(-2px);
+        border-color: $primaryColorHover;
+      }
+    }
+  }
+
   .label {
     font-size: 14px;
     color: $textColor;

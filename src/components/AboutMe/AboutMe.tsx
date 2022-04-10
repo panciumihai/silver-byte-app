@@ -16,7 +16,7 @@ const AboutMe: FC<AboutMeProps> = (props) => {
   const [selectedTab, setSelectedTab] = useState(profile.tabs[0].label);
 
   return (
-    <Wrapper className={styles.wrapper} component="section">
+    <Wrapper className={styles.wrapper} component="section" id="#aboutUs">
       <div className={styles.imageContainer}>
         <img src={profile.image} alt={`${profile.name} thumbnail`}></img>
       </div>

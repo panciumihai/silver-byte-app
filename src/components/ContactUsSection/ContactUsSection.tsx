@@ -18,12 +18,11 @@ const ContactUsSection: FC<ContactUsSectionProps> = (props) => {
   const [message, setMessage] = useState('');
 
   return (
-    <Wrapper className={styles.wrapper}>
+    <Wrapper className={styles.wrapper} id="#contact">
       <div className={styles.form}>
         <h1>Tell us about your project</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, tempora. Velit dicta veniam error reiciendis?
-          Itaque dolore, deserunt nemo nobis cumque quam ratione fugit veritatis excepturi libero rerum nihil omnis!
+          You already got the design? Or you have some questions? Send an email below and let’s get the things done.
         </p>
 
         <div className={styles.inputsContainer}>
@@ -32,7 +31,7 @@ const ContactUsSection: FC<ContactUsSectionProps> = (props) => {
           <Input
             value={phone}
             type="phone"
-            placeHolder={'Phone Number'}
+            placeHolder={'Phone Number (optional)'}
             onChange={(e) => setPhone(e.currentTarget.value)}
           ></Input>
         </div>

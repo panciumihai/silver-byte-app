@@ -29,13 +29,24 @@
     margin-left: 30px;
     @include media('<smTablet') {
       width: 90%;
+      margin: 0 10px;
     }
     h1 {
       font-size: 46px;
       font-weight: 700;
+      margin-bottom: 12px;
+
       @include media('<smTablet') {
+        text-align: center;
         font-size: 36px;
       }
+      @include media('<mobile') {
+        font-size: 26px;
+      }
+    }
+    label {
+      display: inline-block;
+      margin-top: 12px;
     }
   }
 }

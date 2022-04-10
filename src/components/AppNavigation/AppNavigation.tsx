@@ -13,7 +13,7 @@ const AppNavigation: FC<AppNavigationProps> = (props) => {
 
   const getNavLinks = () =>
     links.map((nl) => (
-      <NavigationLink className={styles.navLink} key={nl.label} to={nl.to}>
+      <NavigationLink key={nl.label} className={styles.navLink} to={nl.to}>
         {nl.label}
       </NavigationLink>
     ));
