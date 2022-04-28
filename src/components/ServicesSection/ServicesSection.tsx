@@ -10,7 +10,13 @@ interface ServicesSectionProps {}
 const ServicesSection: FC<ServicesSectionProps> = (props) => {
   const getServicesCards = () =>
     SERVICES_CARDS_MOCK.map((sc, index) => (
-      <AnimationOnScroll key={index} animateOnce={true} animateIn="animate__flipInX" delay={150 * index}>
+      <AnimationOnScroll
+        key={index}
+        animateOnce={true}
+        initiallyVisible={false}
+        animateIn="animate__fadeIn"
+        delay={100 * index}
+      >
         <Card className={styles.card}>
           <div className={styles.iconContainer}>{sc.icon}</div>
           <h3>{sc.title}</h3>

@@ -10,7 +10,7 @@ interface TechnologiesSectionProps {}
 const TechnologiesSection: FC<TechnologiesSectionProps> = (props) => {
   const getTechCards = () =>
     TECH_CARDS_MOCK.map((tc, index) => (
-      <AnimationOnScroll key={index} animateOnce={true} animateIn="animate__flipInY" delay={150 * index}>
+      <AnimationOnScroll key={index} animateOnce={true} animateIn="animate__fadeIn" delay={100 * index}>
         <Card className={styles.card}>
           <div className={styles.iconContainer}>{tc.icon}</div>
           <h3>{tc.title}</h3>

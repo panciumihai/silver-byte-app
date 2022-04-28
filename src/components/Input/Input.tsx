@@ -7,6 +7,7 @@ import styles from './Input.module.scss';
 
 interface InputProps extends BasicProps {
   value: string;
+  name?: string;
   type?: string;
   onChange: (e: FormEvent<HTMLInputElement> | FormEvent<HTMLTextAreaElement>) => void;
   placeHolder: string;
@@ -14,7 +15,7 @@ interface InputProps extends BasicProps {
 }
 
 const Input: FC<InputProps> = (props) => {
-  const { className, value, type, placeHolder, onChange, isTextarea } = props;
+  const { className, value, type, name, placeHolder, onChange, isTextarea } = props;
   return (
     <>
       {!isTextarea && (
@@ -24,6 +25,7 @@ const Input: FC<InputProps> = (props) => {
           placeholder={placeHolder}
           onChange={onChange}
           value={value}
+          name={name}
         />
       )}
       {isTextarea && (
@@ -32,6 +34,7 @@ const Input: FC<InputProps> = (props) => {
           placeholder={placeHolder}
           onChange={onChange}
           value={value}
+          name={name}
         />
       )}
     </>

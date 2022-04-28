@@ -2,39 +2,25 @@ import { FC, useState } from 'react';
 import { BasicProps } from '../../types';
 import Wrapper from '../Wrapper/Wrapper';
 
-import MihaiImage from '../../assets/images/team/mihai.jpeg';
+import MariusImage from '../../assets/images/testimonials/marius.jpg';
+
 import styles from './TestimonialsSection.module.scss';
-import classNames from 'classnames';
 import ClientTestimonialCard from './ClientTestimonialCard';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 const TESTIMONIALS_MOCK = [
   {
-    image: MihaiImage,
+    image: MariusImage,
     message:
-      'Aklima The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections Bonorum et Malorum original.',
-    name: 'Mihai Panciu',
-    details: 'CEO',
-  },
-  {
-    image: MihaiImage,
-    message: 'Sections Bonorum et Malorum original.',
-    name: 'Akilma',
-    details: 'CEO',
-  },
-  {
-    image: MihaiImage,
-    message: 'Aklima The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.',
-    name: 'Akilma',
-    details: 'CEO',
+      'Mihai is a hard-working person, extremely reliable delivering high quality work perfectly on schedule. Communication was seamless, being always available. Highly recommended, I will work with him again.',
+    name: 'Marius Parasca',
+    details: 'Expert React Developer',
   },
 ];
 
 interface TestimonialsSectionProps extends BasicProps {}
 
 const TestimonialsSection: FC<TestimonialsSectionProps> = (props) => {
-  const {} = props;
-
   const [selectedTestimonial, setSelectedTestimonial] = useState(0);
 
   return (
