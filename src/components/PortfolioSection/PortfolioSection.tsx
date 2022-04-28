@@ -6,6 +6,7 @@ import Button from '../Button/Button';
 import AlphaCapImage from '../../assets/images/portfolio/alpha-cap.png';
 import AlphaPadImage from '../../assets/images/portfolio/alpha-pad.png';
 import RetroverseImage from '../../assets/images/portfolio/retroverse.png';
+import RuffleImage from '../../assets/images/portfolio/ruffle-inu.png';
 
 import styles from './PortfolioSection.module.scss';
 import Section from '../Section/Section';
@@ -54,14 +55,18 @@ const list = [
     title: 'Retroverse',
     videoUrl: '/videos/retroverse-demo.mp4',
   },
+  {
+    image: RuffleImage,
+    category: 'Development',
+    title: 'Ruffle Inu',
+    videoUrl: '/videos/ruffle-inu.mp4',
+  },
 ];
 const description = 'These are our last projects. Our clients were very satisfied with the final result.';
 
 interface PortfolioSectionProps extends BasicProps {}
 
 const PortfolioSection: FC<PortfolioSectionProps> = (props) => {
-  const {} = props;
-
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedProjectVideo, setSelectedProjectVideo] = useState('');
 
