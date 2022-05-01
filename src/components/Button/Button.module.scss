@@ -1,6 +1,7 @@
 @import '../../styles/variables.scss';
 
 .button {
+  min-width: 170px;
   position: relative;
   display: inline-block;
 
@@ -36,8 +37,8 @@
       color: white;
       background-color: $primaryColor;
       box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
-      -webkit-transform: translateY(-5px);
-      transform: translateY(-5px);
+      // -webkit-transform: translateY(-5px);
+      // transform: translateY(-5px);
     }
   }
 
@@ -53,6 +54,18 @@
       box-shadow: 0 10px 15px 0 rgb(0 0 0 / 10%);
       -webkit-transform: translateY(-5px);
       transform: translateY(-5px);
+    }
+  }
+
+  &:disabled {
+    color: #c6c9d8;
+    background: transparent;
+    border: 2px solid #b1b4c1;
+    &:hover {
+      border-color: #b1b4c1;
+      color: #c6c9d8;
+      background: transparent;
+      cursor: default;
     }
   }
 }

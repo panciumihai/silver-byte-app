@@ -16,13 +16,12 @@ function App() {
         theme={'dark'}
         transition={Slide}
         autoClose={5000}
-        hideProgressBar={false}
+        // hideProgressBar={false}
         newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
+        // closeOnClick
+        // rtl={false}
+        // pauseOnFocusLoss
+        // pauseOnHover
       />
     </BrowserRouter>
   );
